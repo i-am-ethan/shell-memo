@@ -11,7 +11,10 @@ git clone https://github.com/i-am-ethan/shell-memo.git
 
 2. .zshrc(または適切なシェルの設定ファイル)を開き、以下の2行を追加します。
 ```
-source /path/to/write_memo.sh
+# shell-memo
+writeMemo(){
+    source ~/shell-memo/write_memo.sh
+}
 alias memo=writeMemo
 ```
 pathはクローンしたファイルのパスに変更して下さい。(パスはpwdコマンドなどで確認できます)
